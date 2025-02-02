@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const competences = document.querySelectorAll(".competence");
     const descriptionBox = document.getElementById("description-box");
-    const projets = document.querySelectorAll(".projet");
     const voirCompetencesButtons = document.querySelectorAll(".voir-competences");
 
     // ✅ Gestion de l'affichage de la description au survol
@@ -18,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // ✅ Gestion du clic sur "Voir les compétences associées"
     voirCompetencesButtons.forEach((btn, index) => {
         btn.addEventListener("click", () => {
-            // Réinitialiser les compétences (remettre le fond à sa couleur d'origine)
+            // Supprimer l'ancienne surbrillance
             competences.forEach(comp => comp.classList.remove("highlight"));
 
-            // Récupérer les indices des compétences associées
-            const competencesAssociees = projets[index].getAttribute("data-competences").split(",");
+            // Récupérer les compétences associées
+            const competencesAssociees = btn.parentElement.getAttribute("data-competences").split(",");
 
-            // Appliquer la surbrillance
+            // Appliquer la surbrillance aux bonnes compétences
             competencesAssociees.forEach(i => {
-                competences[i].classList.add("highlight");
+                competences[parseInt(i)].classList.add("highlight");
             });
         });
     });

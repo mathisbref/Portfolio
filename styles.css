@@ -116,6 +116,21 @@ form button:hover {
     background: #555;
 }
 
+.voir-competences {
+    background-color: #333 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.voir-competences:hover {
+    background-color: #555 !important;
+    transform: scale(1.05);
+}
+
 #competences .col {
     display: flex;
     justify-content: center;
@@ -142,5 +157,7 @@ form button:hover {
 .highlight {
     background-color: #ffcc00 !important;
     font-weight: bold;
+    border: 2px solid #333;
     transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
