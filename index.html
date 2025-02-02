@@ -36,46 +36,61 @@
     </section>
 
     <!-- Section Compétences -->
-    <!-- Section Compétences -->
     <section id="competences" class="container text-center">
         <h2 class="mb-4">Mes Compétences</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">💻 Réaliser un développement d'application</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Développer des applications en utilisant différentes technologies et langages.">💻
+                    Réaliser un développement d'application</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">🚀 Optimiser des applications informatiques</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Optimiser les performances des applications en améliorant leur efficacité.">🚀
+                    Optimiser des applications informatiques</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">🖧 Administrer des systèmes informatiques</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Administrer et sécuriser des systèmes et réseaux informatiques complexes.">🖧
+                    Administrer des systèmes informatiques</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">📊 Gérer des données de l'information</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Gérer, analyser et sécuriser des données pour une meilleure exploitation.">📊
+                    Gérer
+                    des données de l'information</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">📅 Conduire un projet</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Piloter et coordonner des projets informatiques du début à la fin.">📅 Conduire un
+                    projet</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded shadow-sm bg-light">🤝 Travailler en équipe informatique</div>
+                <div class="competence p-3 border rounded shadow-sm bg-light"
+                    data-description="Collaborer efficacement au sein d'une équipe de développement et de gestion.">🤝
+                    Travailler en équipe informatique</div>
             </div>
         </div>
+        <div id="description-box" class="mt-4 p-3 bg-white border rounded shadow-sm d-none"></div>
     </section>
+
 
 
     <!-- Section Projets -->
-    <section id="projets">
+    <section id="projets" class="container text-center">
         <h2>Mes Projets</h2>
-        <div class="projet">
+        <div class="projet p-3 border rounded shadow-sm bg-white" data-competences="0,1">
             <h3>Projet 1 - Application Web</h3>
             <p>Développement d’une application web complète avec gestion de base de données.</p>
-            <a href="#competences">Voir les compétences associées</a>
+            <button class="btn btn-primary voir-competences">Voir les compétences associées</button>
         </div>
-        <div class="projet">
+        <div class="projet p-3 border rounded shadow-sm bg-white" data-competences="2,3">
             <h3>Projet 2 - Optimisation d'un algorithme</h3>
             <p>Refonte et amélioration des performances d’un algorithme de traitement de données.</p>
-            <a href="#competences">Voir les compétences associées</a>
+            <button class="btn btn-primary voir-competences">Voir les compétences associées</button>
         </div>
     </section>
+
 
     <!-- Section Contact -->
     <section id="contact">
