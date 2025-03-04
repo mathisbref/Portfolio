@@ -8,6 +8,7 @@ body {
     background-image: url('BG.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* Barre de navigation */
