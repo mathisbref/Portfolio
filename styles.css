@@ -188,12 +188,3 @@ form button:hover {
     background-color: #555;
     transform: scale(1.05);
 }
-
-/* Surbrillance des compétences associées */
-.highlight {
-    background-color: #ffcc00 !important;
-    font-weight: bold;
-    border: 2px solid #333;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}

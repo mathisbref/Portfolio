@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 competence.classList.add("highlight");
                 competence.style.borderColor = colors[index % colors.length]; // Appliquer une couleur de contour
             });
+
+            // Défilement vers la section compétences
+            document.getElementById("competences").scrollIntoView({ behavior: "smooth" });
         });
     });
 });
