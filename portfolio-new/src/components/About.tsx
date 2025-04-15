@@ -52,7 +52,7 @@ const About = () => {
           >
             <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-primary relative">
               <img
-                src="profil.jpg"
+                src="/profil.jpg"
                 alt="Mathis Brefuel"
                 className="w-full h-full object-cover"
               />
