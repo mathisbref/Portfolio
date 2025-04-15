@@ -1,18 +1,31 @@
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 import {
   CodeBracketIcon,
   ServerIcon,
   PaintBrushIcon,
-  CpuChipIcon,
   CloudIcon,
-  CommandLineIcon,
 } from '@heroicons/react/24/outline'
 
-const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('frontend')
+interface Skill {
+  name: string
+  level: number
+}
 
-  const categories = {
+interface CategoryData {
+  icon: React.ReactElement
+  title: string
+  skills: Skill[]
+}
+
+interface Categories {
+  [key: string]: CategoryData
+}
+
+const Skills = () => {
+  const [activeCategory, setActiveCategory] = useState<string>('frontend')
+
+  const categories: Categories = {
     frontend: {
       icon: <CodeBracketIcon className="w-6 h-6" />,
       title: 'Frontend',

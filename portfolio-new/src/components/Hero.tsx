@@ -60,7 +60,7 @@ const Hero = () => {
             Me contacter
           </motion.a>
           <motion.a
-            href="CV.pdf"
+            href="/CV.pdf"
             target="_blank"
             className="bg-gray-800 hover:bg-gray-700 px-8 py-3 rounded-full transition-colors text-white font-medium"
             whileHover={{ scale: 1.05 }}
