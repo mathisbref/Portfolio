@@ -2,7 +2,6 @@
   "name": "portfolio-new",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "homepage": "https://mathisbref.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
